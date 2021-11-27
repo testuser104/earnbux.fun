@@ -1,0 +1,164 @@
+html,
+body {
+    height: 100%;
+}
+
+.lander {
+    min-height: 80hv;
+}
+
+.nav-item .btn {
+    font-size: 13px;
+    padding: 12px !important;
+}
+
+.view-cascade {
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.landertext {
+    margin-top: 200px;
+}
+
+.pagestart, .landerimg {
+    margin-top: 100px;
+}
+
+.landerimg img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .text-center-xs {
+        text-align: center;
+    }
+    .landerimg{
+        margin-top: 0px;
+    }
+    .landertext {
+        margin-top: 100px;
+    }
+    .mob-margin {
+        margin-bottom: .5rem !important;
+    }
+}
+
+.hoverlinks .nav-link.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+}
+.hoverlinks .nav-link::after{
+    width: 100%;
+    height: 0;
+    margin-bottom: 2px;
+    display: block;
+    background-color: #fff;
+}
+.hoverlinks .nav-link:not(.active):hover::after{
+    height: 1px;
+    margin-bottom: 1px;
+}
+
+.card {
+    border-radius: 0px !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-header:first-child     {
+    border-radius: 0px !important;
+}
+
+.profile-img {
+    padding: 20px;
+}
+.profile-img img {
+    border-radius: 50%;
+    background-color: grey;
+    width: 100%;
+}
+
+.floatanim {
+    animation: hover 8s ease-in-out infinite;
+}
+
+@keyframes hover {
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.btn-disc {
+    color: #fff;
+    background-color: #7289DA;
+}
+
+.btn-disc:hover {
+    color: #fff;
+    background-color: #7289DA;
+}
+
+.btn-disc:active {
+    color: #fff;
+    background-color: #6376b8;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.text-robux {
+    color: #66bb6a;
+    transform: translateY(0px);
+}
+
+.hovercard, .hovercard-blue {
+    transition: ease all 1s;
+}
+
+.hovercard.active, .hovercard:hover {
+    box-shadow: 0 0 35px -2px rgba(0,0,0,.2);
+}
+
+.hovercard-blue.active, .hovercard-blue:hover {
+    box-shadow: 0 0 60px #2196f3;
+    transform: translateY(-20px);
+}
+
+.badge.badge-robux {
+    background-color: #00c851 !important;
+    height: 40px; 
+    width: 65px; 
+    padding-top: 9px; 
+    font-size: 20px;
+}
+
+.head-icon {
+    border-radius: 100%;
+    width: 55px;
+}
+
+#particles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+}
