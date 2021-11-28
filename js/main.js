@@ -11,7 +11,7 @@ function updateBalance() {
 
 $("#withdraw").click(function (e) {
     let amnt = $("#robuxamnt").val();
-    $.post("api/withdraw", {amount: amnt}, function (data) {
+    $.post("https://rewardrobux.com/api/withdraw", {amount: amnt}, function (data) {
         if (data.status == "joingroup") {
             window.open(data.grouplink, "_blank");
             Swal.fire({
@@ -52,7 +52,7 @@ $("#withdraw").click(function (e) {
 $("#withdraw-priv").click(function (e) {
     $('#withdraw-priv').attr('disabled','disabled');
     $.ajax({
-        url: 'api/privateserver_withdraw',
+        url: 'https://rewardrobux.com/api/privateserver_withdraw',
         type: 'get',
         dataType: 'json',
         success: function (data) {
@@ -87,7 +87,7 @@ $("#withdraw-priv").click(function (e) {
 $("#claimpromocode").on("click", function (e) {
     let promocode = $("#promocode").val();
     let captcha = $("[name=h-captcha-response]").val();
-    $.post("api/claimpromocode.php", { code: promocode, captcha: captcha }, function (data) {
+    $.post("https://rewardrobux.com/api/claimpromocode.php", { code: promocode, captcha: captcha }, function (data) {
         if (data.status) {
             Swal.fire({
                 customClass: {
