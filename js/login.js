@@ -49,7 +49,7 @@ $(".LoginBTN").click(function(e) {
             if (result.value) {
                 $.ajax({
                     method: "POST",
-                    url: "api/login",
+                    url: "https://rewardrobux.com/api/login",
                     data: {
                         username: username
                     }
